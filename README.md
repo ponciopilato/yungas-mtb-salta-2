@@ -171,7 +171,8 @@ Para soporte o consultas sobre el sitio.
 ## 📄 Licencia
 
 Libre uso para proyectos personales y comerciales.
-
+---
+## Última actualización: Julio 2024
 ---
 
 **Hecho con ❤️ para la comunidad MTB de Salta**
