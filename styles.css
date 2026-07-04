@@ -392,9 +392,9 @@ body {
 }
 
 .hero-logo {
-    height: 220px; /* Increased from 120px to make logo much larger and more prominent */
+    height: 286px; /* Increased by 30% from 220px for maximum visual impact */
     width: auto;
-    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
     animation: float 3s ease-in-out infinite;
 }
 
