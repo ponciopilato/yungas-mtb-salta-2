@@ -381,67 +381,37 @@ function initMap() {
     
     // Trail data with coordinates
     const trails = [
-        {
-            name: 'Cerro San Bernardo',
-            coords: [-24.7689, -65.3928],
-            distance: 12,
-            elevation: 450,
-            duration: '2-3 hs',
-            difficulty: 'intermediate',
-            description: 'El clásico de Salta. Subida desafiante con vistas panorámicas increíbles.',
-            color: '#6B8E23' // Olive Drab
-        },
-        {
-            name: 'Valle de Lerma',
-            coords: [-24.8333, -65.5000],
-            distance: 25,
-            elevation: 600,
-            duration: '4-5 hs',
-            difficulty: 'advanced',
-            description: 'Recorrido extenso por el valle con cambios de ritmo constantes.',
-            color: '#DAA520' // Goldenrod
-        },
-        {
-            name: 'Quebrada de San Lorenzo',
-            coords: [-24.7167, -65.4500],
-            distance: 18,
-            elevation: 800,
-            duration: '3-4 hs',
-            difficulty: 'advanced',
-            description: 'Sendero en la selva de yunga con vegetación densa y humedad.',
-            color: '#DAA520' // Goldenrod
-        },
-        {
-            name: 'Campo de Marte',
-            coords: [-24.7900, -65.4100],
-            distance: 8,
-            elevation: 200,
-            duration: '1-2 hs',
-            difficulty: 'beginner',
-            description: 'Perfecto para comenzar. Sendero suave ideal para familias.',
-            color: '#32CD32' // Lime Green
-        },
-        {
-            name: 'Cerro Castañal',
-            coords: [-24.7700, -65.4200],
-            distance: 15,
-            elevation: 550,
-            duration: '2-3 hs',
-            difficulty: 'intermediate',
-            description: 'Sendero con mix de subida constante y secciones planas.',
-            color: '#6B8E23' // Olive Drab
-        },
-        {
-            name: 'Quebrada del Chachapoyas',
-            coords: [-24.6500, -65.3800],
-            distance: 30,
-            elevation: 900,
-            duration: '5-6 hs',
-            difficulty: 'expert',
-            description: 'La ruta más exigente. Territorio remoto con navegación compleja.',
-            color: '#FF4500' // Orange Red
-        }
-    ];
+            {
+                name: 'Circuito 1: Elefante - Los Hurones',
+                coords: [-24.6800, -65.4100],
+                distance: 12.58,
+                elevation: 675,
+                duration: '3-4 hs',
+                difficulty: 'intermediate',
+                description: 'Selva de yunga, fauna autóctona, vistas del Valle de Lerma.',
+                color: '#8B4513'
+            },
+            {
+                name: 'Circuito 2: Cerro Negro - Corralito',
+                coords: [-24.6000, -65.5500],
+                distance: 0,
+                elevation: 3000,
+                duration: 'Varias hrs',
+                difficulty: 'expert',
+                description: 'Descenso desde ~4.000m de puna hasta la selva.',
+                color: '#2C1810'
+            },
+            {
+                name: 'Circuito 3: Cerro Redondo',
+                coords: [-24.5500, -65.6500],
+                distance: 22.5,
+                elevation: 1256,
+                duration: '10 hs',
+                difficulty: 'advanced',
+                description: 'Precordillera profunda, Incamayo, vistas 360°.',
+                color: '#D2691E'
+            }
+        ];
     
     // Custom icon based on difficulty
     function createIcon(difficulty) {
