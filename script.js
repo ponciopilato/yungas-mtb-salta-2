@@ -13,32 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
 });
 
-// Cursor Follower Effect
-function initCursorFollower() {
-    const follower = document.querySelector('.cursor-follower');
-    const followerBlur = document.querySelector('.cursor-follower-blur');
-    
-    if (!follower || !followerBlur) return;
-    
-    document.addEventListener('mousemove', (e) => {
-        follower.style.left = e.pageX + 'px';
-        follower.style.top = e.pageY + 'px';
-        followerBlur.style.left = e.pageX + 'px';
-        followerBlur.style.top = e.pageY + 'px';
-    });
-    
-    // Hide followers when leaving window
-    document.addEventListener('mouseleave', () => {
-        follower.style.opacity = '0';
-        followerBlur.style.opacity = '0';
-    });
-    
-    document.addEventListener('mouseenter', () => {
-        follower.style.opacity = '1';
-        followerBlur.style.opacity = '1';
-    });
-}
-
 // Particle System for Hero Section
 function initParticleSystem() {
     const canvas = document.getElementById('particles-canvas');
