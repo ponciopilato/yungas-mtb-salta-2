@@ -5,8 +5,33 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--lighter);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Prevent horizontal overflow */
+img, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 :root {
-    /* Color palette - Earth tones with vibrant accents */
     --primary-dark: #2C1810;      /* Dark earth */
     --primary: #8B4513;           /* Saddle Brown */
     --primary-light: #A0522D;     /* Sienna */
